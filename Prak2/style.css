@@ -1,0 +1,61 @@
+/* CSS untuk mengatur tampilan halaman HTML Anda */
+
+/* Mengatur tampilan header */
+header {
+    background-color: #333; /* Warna latar belakang header */
+    color: #fff; /* Warna teks header */
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Mengatur tampilan link navigasi */
+  nav ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  /* Mengatur tampilan tabel */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid #333;
+  }
+  
+  /* Mengatur tampilan form */
+  form {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Mengatur tampilan video */
+  video {
+    width: 100%;
+    max-width: 600px;
+    display: ;
+    margin: 20px auto;
+  }
+  
+  /* Mengatur tampilan footer */
+  footer {
+    width: 100%;
+    height: 50px;
+    padding-left: 10px;
+    line-height: 50px;
+    background: #333;
+    color: #fff;
+    position: bottom;
+    bottom: 0px;
+  }
+
+  
+  
