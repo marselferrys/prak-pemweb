@@ -11,7 +11,7 @@ function hitungganjilgenap(){
   let ganjil = 0;
   let genap = 0;
   
-
+if( Inputbilangan > 0 && !isNaN(Inputbilangan)){
   for(let i = 1; i <= Inputbilangan; i++){
     if(i%2 == 0){
         genap++;
@@ -23,5 +23,7 @@ function hitungganjilgenap(){
 let hasilPerhitungan =  document.getElementById('hasilPerhitungan');
     hasilPerhitungan.innerHTML = 'Jumlah bilangan ganjil: '+ ganjil + '<br>' + 
                                 'Jumlah bilangan genap: ' + genap;
-  
+  }else{
+    alert("Masukkan tidak valid. Mohon masukkan bilangan bulat positif atau bilangan bukan 0.");
+}
 }
