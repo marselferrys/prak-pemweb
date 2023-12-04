@@ -16,6 +16,7 @@ include 'connect.php'
 <!-- Nama: Marchel Ferry Timoteus S -->
 <!-- NIM: 121140195 -->
 <!-- Prodi: Teknik Informatika -->
+<!-- Kelas: RC -->
 
     <form>
         <label for="mahasiswa"> Pilih Prodi : </label>
