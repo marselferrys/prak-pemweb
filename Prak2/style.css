@@ -1,61 +1,191 @@
-/* CSS untuk mengatur tampilan halaman HTML Anda */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box; /* Memastikan padding dan border tidak memengaruhi ukuran elemen */
+}
 
-/* Mengatur tampilan header */
+a {
+  color: #fff;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+p {
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
 header {
-    background-color: #333; /* Warna latar belakang header */
-    color: #fff; /* Warna teks header */
-    text-align: center;
-    padding: 10px;
-  }
-  
-  /* Mengatur tampilan link navigasi */
-  nav ul {
-    text-align: center;
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 10px;
-  }
-  
-  /* Mengatur tampilan tabel */
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  table, th, td {
-    border: 1px solid #333;
-  }
-  
-  /* Mengatur tampilan form */
-  form {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  /* Mengatur tampilan video */
-  video {
-    width: 100%;
-    max-width: 600px;
-    display: ;
-    margin: 20px auto;
-  }
-  
-  /* Mengatur tampilan footer */
-  footer {
-    width: 100%;
-    height: 50px;
-    padding-left: 10px;
-    line-height: 50px;
-    background: #333;
-    color: #fff;
-    position: bottom;
-    bottom: 0px;
+  background-color: #0026ad;
+  height: 92px;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* Memberikan jarak pada sisi kiri dan kanan */
+}
+
+header img {
+  height: 50px; /* Atur ukuran logo */
+}
+
+header p {
+  font-size: 16px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Memastikan elemen nav memenuhi lebar */
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list li {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  font-size: 18px;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+  padding: 25px 20px 14px 20px;
+  min-height: calc(100vh - 92px - 66px);
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+article {
+  background-color: rgb(251, 255, 129);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  width: 100%; /* Menyesuaikan lebar agar responsif */
+}
+
+article:last-child {
+  margin-bottom: 0;
+}
+
+article h1 {
+  margin: 10px 0;
+}
+
+article p {
+  margin-top: 16px;
+  line-height: 24px;
+}
+
+footer {
+  margin-top: auto;
+  background-color: #0026ad;
+  color: #fff;
+  padding: 24px 0;
+  max-height: 66px;
+}
+
+footer .rodape {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.rodape p {
+  padding-left: 24px;
+  font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  header {
+      flex-direction: column; /* Mengatur elemen di header menjadi kolom saat layar kecil */
+      height: auto;
+      padding: 10px 0;
   }
 
-  
-  
+  header img {
+      margin-bottom: 10px; /* Menambahkan jarak bawah untuk logo */
+  }
+
+  nav {
+      justify-content: center; /* Posisikan konten di tengah */
+      width: 90%;
+  }
+
+  .nav-list {
+      flex-direction: column; /* Daftar navigasi menjadi kolom di layar kecil */
+      align-items: center;
+  }
+
+  .nav-list li {
+      padding: 10px 0;
+  }
+
+  main {
+      width: 90%;
+      padding: 15px;
+  }
+
+  footer .rodape {
+      flex-direction: column; /* Menyesuaikan footer untuk layar kecil */
+      align-items: center;
+  }
+}
+
+
+.profile {
+  display: flex;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.profile-photo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+  margin-bottom: 200px;
+}
+
+.profile-details {
+  max-width: 600px;
+}
+
+.profile-details h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.profile-details p {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.profile-details a {
+  color: #0026ad;
+  text-decoration: underline;
+}
