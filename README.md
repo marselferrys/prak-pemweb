@@ -24,4 +24,5 @@ Untuk mengunduh dan mengakses semua file di repositori ini secara lokal, ikuti l
    ```bash
    git clone https://github.com/marselferrys/prak-pemweb.git
 4. Buka folder repositori yang telah di-clone dengan perintah:
+```bash
     cd prak-pemweb
